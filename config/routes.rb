@@ -1,6 +1,6 @@
 
 Tutorialapp::Application.routes.draw do
-  get "users/new"
+  resources :users
 
   match '/signup',  :to => 'users#new'
 
